@@ -1,0 +1,194 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.1 (64-bit)
+# SW Build 2580384 on Sat Jun 29 08:12:21 MDT 2019
+# IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+# Start of session at: Wed Apr  1 20:08:11 2020
+# Process ID: 3984
+# Current directory: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22096
+# Log file: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/hdl_projects/ZCU104_thales/ZCU104_thales.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/aptay/Downloads/PYNQ-master/boards/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/hdl_projects/ZCU104_thales'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'Adiuvo_Engineering:hls:line_convert:1.0'. The one found in IP location 'c:/Users/aptay/Downloads/PYNQ-master/boards/ip/Adiuvo_Engineering_hls_line_convert_1_0_2' will take precedence over the same IP in locations: 
+   c:/Users/aptay/Downloads/PYNQ-master/boards/ip/Adiuvo_Engineering_hls_line_convert_1_0
+   c:/Users/aptay/Downloads/PYNQ-master/boards/ip/Adiuvo_Engineering_hls_line_convert_1_0_1
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:module_ref:fps_check:1.0'. The one found in IP location 'c:/hdl_projects/ZCU104_thales/ZCU104_thales.srcs/sources_1/bd/mref/fps_check' will take precedence over the same IP in location c:/hdl_projects/ZCU104_thales/ZCU104_thales.srcs/sources_1/bd/mref/fps_check
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:13 . Memory (MB): peak = 945.852 ; gain = 248.297
+update_compile_order -fileset sources_1
+open_bd_design {C:/hdl_projects/ZCU104_thales/ZCU104_thales.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.3 - zynq_ultra_ps_e_0
+WARNING: [BD 41-176] The physical port 'M_AXI_HPM0_FPD_aximm_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'M_AXI_HPM0_FPD_aximm_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'M_AXI_HPM1_FPD_aximm_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'M_AXI_HPM1_FPD_aximm_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_HPC0_FPD_aximm_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_HPC0_FPD_aximm_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_HPC1_FPD_aximm_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_HPC1_FPD_aximm_rd_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:hls:color_convert:1.0 - color_convert_0
+Adding component instance block -- xilinx.com:hls:pixel_pack:1.0 - pixel_pack_0
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_100M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps8_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding componopen_bd_design {c:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/mipi_csi2_rx_subsystem_0_ex.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - axi_bram_ctrl_0_bram
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - axi_ethernet_0_refclk
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_2
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_3
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_4
+Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - axi_iic_0
+Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - axi_iic_1
+Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - axi_iic_2
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:axis_register_slice:1.1 - axis_register_slice_0
+Adding component instance block -- xilinx.com:ip:axis_register_slice:1.1 - axis_register_slice_1
+Adding component instance block -- xilinx.com:ip:axis_switch:1.1 - axis_switch_0
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_2
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Adding component instance block -- xilinx.com:ip:mig_7series:4.2 - mig_7series_1
+Adding component instance block -- xilinx.com:ip:mipi_csi2_rx_subsystem:4.1 - mipi_csi2_rx_subsystem_0
+Adding component instance block -- xilinx.com:ip:mipi_dsi_tx_subsystem:2.0 - mipi_dsi_tx_subsystem_0
+Adding component instance block -- xilinx.com:ip:oddr:1.0 - oddr_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_axi_ethernet_0_refclk_200M
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_mig_7series_0_100M
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_mig_7series_0_100M_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_mig_7series_0_150M
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_demosaic:1.0 - v_demosaic_0
+Adding component instance block -- xilinx.com:ip:v_proc_ss:2.2 - v_proc_ss_0
+Adding component instance block -- xilinx.com:ip:v_rgb2ycrcb:7.1 - v_rgb2ycrcb_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- xilinx.com:ip:v_tpg:8.0 - v_tpg_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_2
+Adding component instance block -- xilinx.com:ip:v_mix:4.0 - v_mix_0
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_1
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_1: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_2
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_2: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding component instance block -- adiuvo_engineering:hls:hud_gen:1.0 - hud_gen_0
+Adding component instance block -- digilentinc.com:IP:PmodHYGRO:1.0 - PmodHYGRO_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_gpio_4/gpio_io_o(undef) and /v_axi4s_vid_out_0/aresetn(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_gpio_4/gpio_io_o(undef) and /v_tpg_0/ap_rst_n(rst)
+Successfully read diagram <design_1> from BD file <c:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/mipi_csi2_rx_subsystem_0_ex.srcs/sources_1/bd/design_1/design_1.bd>
+WARNING: [BD 41-1731] Type mismatch between connected pins: /phy/system_rst_out(undef) and /system_rst_out(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /mipi_dsi_tx_ctrl_0/master_resetn(undef) and /proc_sys_reset_1/ext_reset_in(rst)
+open_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1402.273 ; gain = 31.027
+regenerate_bd_layout -routing
+regenerate_bd_layout
+set_property location {7.5 2314 908} [get_bd_cells hud_gen_0]
+set_property location {9 2677 908} [get_bd_cells hud_gen_0]
+set_property location {7.5 2302 847} [get_bd_cells axi_vdma_0]
+set_property location {6.5 1836 844} [get_bd_cells v_demosaic_0]
+set_property location {6 1847 866} [get_bd_cells v_demosaic_0]
+regenerate_bd_layout
+create_bd_cell -type hier io
+/io
+set_property location {6 1277 1299} [get_bd_cells v_demosaic_0]
+save_bd_design
+Wrote  : <c:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\mipi_csi2_rx_subsystem_0_ex.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <c:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/mipi_csi2_rx_subsystem_0_ex.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+archive_project c:/hdl_projects/mipi_csi2_rx_subsystem_0_ex.xpr.zip -temp_dir C:/temp -force -exclude_run_results -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/temp' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/hdl_projects/mipi_csi2_rx_subsystem_0_ex'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/hdl_projects/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+WARNING: [Coretcl 2-105] Run 'synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_v_mix_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_mix_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_xbar_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_xbar_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_ila_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_ila_0_1_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_0_1_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_ila_0_2_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_0_2_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_hud_gen_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_hud_gen_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_PmodHYGRO_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_PmodHYGRO_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_tier2_xbar_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_tier2_xbar_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_tier2_xbar_2_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_tier2_xbar_2_0_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_mix_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_xbar_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_0_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_hud_gen_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_PmodHYGRO_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_tier2_xbar_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_tier2_xbar_2_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_PmodHYGRO_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_PmodHYGRO_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_hud_gen_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_hud_gen_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_ila_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_ila_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_ila_0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_ila_0_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_ila_0_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_ila_0_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_tier2_xbar_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_tier2_xbar_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_tier2_xbar_2_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_tier2_xbar_2_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_v_mix_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_v_mix_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_xbar_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_xbar_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

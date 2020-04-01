@@ -1,0 +1,1244 @@
+12:18:31 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\temp_xsdb_launch_script.tcl
+12:18:33 INFO  : XSCT server has started successfully.
+12:18:33 INFO  : Registering command handlers for Vitis TCF services
+12:18:36 INFO  : plnx-install-location is set to ''
+12:18:36 INFO  : Successfully done setting XSCT server connection channel  
+12:18:36 INFO  : Successfully done query RDI_DATADIR 
+12:18:36 INFO  : Successfully done setting workspace for the tool. 
+12:20:48 INFO  : Successfully done sdx_reload_mss "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/sp701/microblaze_0/standalone_domain/bsp/system.mss"
+12:22:15 ERROR : The following application project(s) included in the system project 'executable_system' are missing from the workspace.
+Please import the applications using 'File -> Import -> Existing Projects into Workspace' option or delete the application project entries from the system project settings editor.
+
+ 1. executable
+12:22:46 INFO  : The hardware specfication used by project 'executable' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+12:22:46 INFO  : The updated bitstream files are copied from platform to folder 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream' in project 'executable'.
+13:08:27 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+13:10:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:10:16 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+13:10:16 INFO  : 'jtag frequency' command is executed.
+13:10:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+13:10:21 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+13:10:21 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:10:22 INFO  : Context for processor 'microblaze_0' is selected.
+13:10:22 INFO  : System reset is completed.
+13:10:25 INFO  : 'after 3000' command is executed.
+13:10:25 INFO  : Context for processor 'microblaze_0' is selected.
+13:10:26 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+13:10:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+13:10:26 INFO  : Memory regions updated for context PA
+13:10:26 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:10:26 INFO  : Context for processor 'microblaze_0' is selected.
+13:10:26 INFO  : 'con' command is executed.
+13:10:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:10:26 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+13:11:56 INFO  : Disconnected from the channel tcfchan#2.
+13:11:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:11:56 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+13:11:56 INFO  : 'jtag frequency' command is executed.
+13:11:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+13:11:58 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+13:11:59 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:11:59 INFO  : Context for processor 'microblaze_0' is selected.
+13:11:59 INFO  : System reset is completed.
+13:12:02 INFO  : 'after 3000' command is executed.
+13:12:02 INFO  : Context for processor 'microblaze_0' is selected.
+13:12:02 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+13:12:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+13:12:03 INFO  : Memory regions updated for context PA
+13:12:03 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:12:03 INFO  : Context for processor 'microblaze_0' is selected.
+13:12:03 INFO  : 'con' command is executed.
+13:12:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:12:03 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+17:16:02 INFO  : Disconnected from the channel tcfchan#3.
+19:01:37 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\temp_xsdb_launch_script.tcl
+19:01:40 INFO  : Registering command handlers for Vitis TCF services
+19:01:41 INFO  : XSCT server has started successfully.
+19:01:41 INFO  : plnx-install-location is set to ''
+19:01:43 INFO  : Successfully done setting XSCT server connection channel  
+19:01:43 INFO  : Successfully done query RDI_DATADIR 
+19:01:43 INFO  : Successfully done setting workspace for the tool. 
+19:01:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:01:57 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+19:01:57 INFO  : 'jtag frequency' command is executed.
+19:01:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+19:02:00 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+19:02:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:02:01 INFO  : Context for processor 'microblaze_0' is selected.
+19:02:01 INFO  : System reset is completed.
+19:02:05 INFO  : 'after 3000' command is executed.
+19:02:06 INFO  : Context for processor 'microblaze_0' is selected.
+19:02:07 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+19:02:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+19:02:07 INFO  : Memory regions updated for context PA
+19:02:07 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+19:02:07 INFO  : Context for processor 'microblaze_0' is selected.
+19:02:07 INFO  : 'con' command is executed.
+19:02:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+19:02:07 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+19:03:25 INFO  : Hardware specification for platform project 'sp701' is updated.
+19:19:57 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+19:19:57 ERROR : Failed to get platform details for the project 'executable'. Cannot sync application flags.
+19:20:34 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\temp_xsdb_launch_script.tcl
+19:20:36 INFO  : XSCT server has started successfully.
+19:20:36 WARN  : channel "tcfchan#1" closed
+19:20:50 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+19:20:50 ERROR : Failed to get platform details for the project 'executable'. Cannot sync application flags.
+19:20:51 ERROR : Failed to compute checksum of hardware specification file used by project 'executable'
+19:21:18 INFO  : Hardware specification for platform project 'sp701' is updated.
+19:22:55 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\temp_xsdb_launch_script.tcl
+19:22:57 INFO  : XSCT server has started successfully.
+19:22:57 INFO  : plnx-install-location is set to ''
+19:22:57 INFO  : Successfully done setting XSCT server connection channel  
+19:22:57 INFO  : Successfully done setting workspace for the tool. 
+19:22:58 INFO  : Registering command handlers for Vitis TCF services
+19:22:58 INFO  : Successfully done query RDI_DATADIR 
+19:23:43 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+19:23:44 INFO  : Updating application flags with new BSP settings...
+19:23:45 INFO  : Successfully updated application flags for project executable.
+19:23:46 INFO  : The hardware specfication used by project 'executable' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+19:23:46 INFO  : The file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+19:23:46 INFO  : The file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream\design_1_wrapper.mmi' stored in project is removed.
+19:23:46 INFO  : The updated bitstream files are copied from platform to folder 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream' in project 'executable'.
+19:25:13 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+19:25:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:25:55 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+19:25:55 INFO  : 'jtag frequency' command is executed.
+19:25:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+19:25:58 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+19:25:58 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:26:00 INFO  : Context for processor 'microblaze_0' is selected.
+19:26:00 INFO  : System reset is completed.
+19:26:03 INFO  : 'after 3000' command is executed.
+19:26:04 INFO  : Context for processor 'microblaze_0' is selected.
+19:26:05 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+19:26:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+19:26:05 INFO  : Memory regions updated for context PA
+19:26:05 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+19:26:05 INFO  : Context for processor 'microblaze_0' is selected.
+19:26:05 INFO  : 'con' command is executed.
+19:26:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+19:26:05 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+19:30:20 INFO  : Disconnected from the channel tcfchan#2.
+19:30:37 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+19:30:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:30:46 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+19:30:46 INFO  : 'jtag frequency' command is executed.
+19:30:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+19:30:49 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+19:30:49 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:30:51 INFO  : Context for processor 'microblaze_0' is selected.
+19:30:51 INFO  : System reset is completed.
+19:30:54 INFO  : 'after 3000' command is executed.
+19:30:55 INFO  : Context for processor 'microblaze_0' is selected.
+19:30:56 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+19:30:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+19:30:56 INFO  : Memory regions updated for context PA
+19:30:56 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+19:30:56 INFO  : Context for processor 'microblaze_0' is selected.
+19:30:56 INFO  : 'con' command is executed.
+19:30:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+19:30:56 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+19:33:07 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+19:33:48 INFO  : Disconnected from the channel tcfchan#3.
+19:33:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:33:48 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+19:33:48 INFO  : 'jtag frequency' command is executed.
+19:33:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+19:33:50 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+19:33:51 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:33:51 INFO  : Context for processor 'microblaze_0' is selected.
+19:33:51 INFO  : System reset is completed.
+19:33:54 INFO  : 'after 3000' command is executed.
+19:33:54 INFO  : Context for processor 'microblaze_0' is selected.
+19:33:55 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+19:33:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+19:33:55 INFO  : Memory regions updated for context PA
+19:33:55 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+19:33:55 INFO  : Context for processor 'microblaze_0' is selected.
+19:33:55 INFO  : 'con' command is executed.
+19:33:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+19:33:55 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+20:17:03 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+20:17:33 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+20:18:08 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+20:18:15 INFO  : Disconnected from the channel tcfchan#4.
+20:18:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:18:16 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+20:18:16 INFO  : 'jtag frequency' command is executed.
+20:18:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+20:18:18 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+20:18:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:18:18 INFO  : Context for processor 'microblaze_0' is selected.
+20:18:18 INFO  : System reset is completed.
+20:18:21 INFO  : 'after 3000' command is executed.
+20:18:21 INFO  : Context for processor 'microblaze_0' is selected.
+20:18:22 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+20:18:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+20:18:22 INFO  : Memory regions updated for context PA
+20:18:22 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+20:18:22 INFO  : Context for processor 'microblaze_0' is selected.
+20:18:22 INFO  : 'con' command is executed.
+20:18:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:18:22 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+20:19:30 INFO  : Disconnected from the channel tcfchan#5.
+20:19:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:19:30 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+20:19:30 INFO  : 'jtag frequency' command is executed.
+20:19:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+20:19:33 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+20:19:33 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:19:33 INFO  : Context for processor 'microblaze_0' is selected.
+20:19:33 INFO  : System reset is completed.
+20:19:36 INFO  : 'after 3000' command is executed.
+20:19:36 INFO  : Context for processor 'microblaze_0' is selected.
+20:19:37 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+20:19:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+20:19:37 INFO  : Memory regions updated for context PA
+20:19:37 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+20:19:37 INFO  : Context for processor 'microblaze_0' is selected.
+20:19:37 INFO  : 'con' command is executed.
+20:19:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:19:37 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+20:20:48 INFO  : Disconnected from the channel tcfchan#6.
+20:20:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:20:48 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+20:20:48 INFO  : 'jtag frequency' command is executed.
+20:20:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+20:20:51 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+20:20:51 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:20:51 INFO  : Context for processor 'microblaze_0' is selected.
+20:20:51 INFO  : System reset is completed.
+20:20:54 INFO  : 'after 3000' command is executed.
+20:20:54 INFO  : Context for processor 'microblaze_0' is selected.
+20:20:55 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+20:20:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+20:20:55 INFO  : Memory regions updated for context PA
+20:20:55 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+20:20:55 INFO  : Context for processor 'microblaze_0' is selected.
+20:20:55 INFO  : 'con' command is executed.
+20:20:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:20:55 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+20:22:49 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+20:22:55 INFO  : Disconnected from the channel tcfchan#7.
+20:22:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:22:55 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+20:22:55 INFO  : 'jtag frequency' command is executed.
+20:22:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+20:22:57 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+20:22:57 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:22:57 INFO  : Context for processor 'microblaze_0' is selected.
+20:22:57 INFO  : System reset is completed.
+20:23:01 INFO  : 'after 3000' command is executed.
+20:23:01 INFO  : Context for processor 'microblaze_0' is selected.
+20:23:01 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+20:23:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+20:23:02 INFO  : Memory regions updated for context PA
+20:23:02 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+20:23:02 INFO  : Context for processor 'microblaze_0' is selected.
+20:23:02 INFO  : 'con' command is executed.
+20:23:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:23:02 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+21:06:43 INFO  : Disconnected from the channel tcfchan#8.
+21:07:02 INFO  : Hardware specification for platform project 'sp701' is updated.
+21:07:39 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+21:07:40 INFO  : The hardware specfication used by project 'executable' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+21:07:40 INFO  : The file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+21:07:40 INFO  : The file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream\design_1_wrapper.mmi' stored in project is removed.
+21:07:40 INFO  : The updated bitstream files are copied from platform to folder 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream' in project 'executable'.
+21:07:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:07:49 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+21:07:49 INFO  : 'jtag frequency' command is executed.
+21:07:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+21:07:52 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+21:07:53 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:07:53 INFO  : Context for processor 'microblaze_0' is selected.
+21:07:53 INFO  : System reset is completed.
+21:07:56 INFO  : 'after 3000' command is executed.
+21:07:57 INFO  : Context for processor 'microblaze_0' is selected.
+21:07:59 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+21:07:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+21:07:59 INFO  : Memory regions updated for context PA
+21:07:59 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+21:07:59 INFO  : Context for processor 'microblaze_0' is selected.
+21:08:00 INFO  : 'con' command is executed.
+21:08:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:08:00 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+21:08:26 INFO  : Disconnected from the channel tcfchan#10.
+21:08:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:08:27 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+21:08:27 INFO  : 'jtag frequency' command is executed.
+21:08:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+21:08:29 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+21:08:29 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:08:29 INFO  : Context for processor 'microblaze_0' is selected.
+21:08:29 INFO  : System reset is completed.
+21:08:32 INFO  : 'after 3000' command is executed.
+21:08:32 INFO  : Context for processor 'microblaze_0' is selected.
+21:08:33 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+21:08:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+21:08:33 INFO  : Memory regions updated for context PA
+21:08:33 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+21:08:33 INFO  : Context for processor 'microblaze_0' is selected.
+21:08:34 INFO  : 'con' command is executed.
+21:08:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:08:34 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+21:41:15 INFO  : Disconnected from the channel tcfchan#11.
+21:41:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:41:15 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+21:41:15 INFO  : 'jtag frequency' command is executed.
+21:41:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+21:41:17 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+21:41:17 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:41:18 INFO  : Context for processor 'microblaze_0' is selected.
+21:41:18 INFO  : System reset is completed.
+21:41:21 INFO  : 'after 3000' command is executed.
+21:41:21 INFO  : Context for processor 'microblaze_0' is selected.
+21:41:21 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+21:41:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+21:41:22 INFO  : Memory regions updated for context PA
+21:41:22 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+21:41:22 INFO  : Context for processor 'microblaze_0' is selected.
+21:41:22 INFO  : 'con' command is executed.
+21:41:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:41:22 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+22:07:51 INFO  : Disconnected from the channel tcfchan#12.
+12:49:08 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\temp_xsdb_launch_script.tcl
+12:49:11 INFO  : XSCT server has started successfully.
+12:49:11 INFO  : Successfully done setting XSCT server connection channel  
+12:49:11 INFO  : plnx-install-location is set to ''
+12:49:11 INFO  : Successfully done setting workspace for the tool. 
+12:49:11 INFO  : Registering command handlers for Vitis TCF services
+12:49:14 INFO  : Successfully done query RDI_DATADIR 
+12:50:55 INFO  : Hardware specification for platform project 'sp701' is updated.
+12:53:37 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+12:57:48 INFO  : The hardware specfication used by project 'executable' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+12:57:48 INFO  : The file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+12:57:48 INFO  : The file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream\design_1_wrapper.mmi' stored in project is removed.
+12:57:48 INFO  : The updated bitstream files are copied from platform to folder 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream' in project 'executable'.
+12:57:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:58:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:58:09 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+13:01:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:01:21 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+13:01:21 INFO  : 'jtag frequency' command is executed.
+13:01:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+13:01:27 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+13:01:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:01:29 INFO  : Context for processor 'microblaze_0' is selected.
+13:01:29 INFO  : System reset is completed.
+13:01:32 INFO  : 'after 3000' command is executed.
+13:01:32 INFO  : Context for processor 'microblaze_0' is selected.
+13:01:32 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+13:01:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+13:01:33 INFO  : Memory regions updated for context PA
+13:01:33 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:01:33 INFO  : Context for processor 'microblaze_0' is selected.
+13:01:33 INFO  : 'con' command is executed.
+13:01:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:01:33 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+13:45:08 INFO  : Disconnected from the channel tcfchan#2.
+13:45:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:45:08 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+13:45:08 INFO  : 'jtag frequency' command is executed.
+13:45:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+13:45:10 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+13:45:10 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:45:10 INFO  : Context for processor 'microblaze_0' is selected.
+13:45:10 INFO  : System reset is completed.
+13:45:13 INFO  : 'after 3000' command is executed.
+13:45:13 INFO  : Context for processor 'microblaze_0' is selected.
+13:45:14 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+13:45:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+13:45:14 INFO  : Memory regions updated for context PA
+13:45:14 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:45:14 INFO  : Context for processor 'microblaze_0' is selected.
+13:45:15 INFO  : 'con' command is executed.
+13:45:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:45:15 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+13:45:15 INFO  : Disconnected from the channel tcfchan#3.
+13:45:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:45:16 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+13:45:16 INFO  : 'jtag frequency' command is executed.
+13:45:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+13:45:18 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+13:45:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:45:18 INFO  : Context for processor 'microblaze_0' is selected.
+13:45:18 INFO  : System reset is completed.
+13:45:21 INFO  : 'after 3000' command is executed.
+13:45:21 INFO  : Context for processor 'microblaze_0' is selected.
+13:45:22 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+13:45:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+13:45:22 INFO  : Memory regions updated for context PA
+13:45:22 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:45:22 INFO  : Context for processor 'microblaze_0' is selected.
+13:45:22 INFO  : 'con' command is executed.
+13:45:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:45:22 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+13:47:21 INFO  : Disconnected from the channel tcfchan#4.
+13:47:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:47:21 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+13:47:21 INFO  : 'jtag frequency' command is executed.
+13:47:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+13:47:24 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+13:47:24 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:47:24 INFO  : Context for processor 'microblaze_0' is selected.
+13:47:24 INFO  : System reset is completed.
+13:47:27 INFO  : 'after 3000' command is executed.
+13:47:27 INFO  : Context for processor 'microblaze_0' is selected.
+13:47:28 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+13:47:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+13:47:28 INFO  : Memory regions updated for context PA
+13:47:28 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:47:28 INFO  : Context for processor 'microblaze_0' is selected.
+13:47:28 INFO  : 'con' command is executed.
+13:47:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:47:28 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+15:00:37 INFO  : Hardware specification for platform project 'sp701' is updated.
+15:01:36 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+15:01:39 INFO  : The hardware specfication used by project 'executable' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+15:01:39 INFO  : The file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+15:01:39 INFO  : The file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream\design_1_wrapper.mmi' stored in project is removed.
+15:01:39 INFO  : The updated bitstream files are copied from platform to folder 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream' in project 'executable'.
+15:01:46 INFO  : Disconnected from the channel tcfchan#5.
+15:01:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:01:47 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+15:01:47 INFO  : 'jtag frequency' command is executed.
+15:01:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+15:01:49 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+15:01:49 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:01:49 INFO  : Context for processor 'microblaze_0' is selected.
+15:01:49 INFO  : System reset is completed.
+15:01:52 INFO  : 'after 3000' command is executed.
+15:01:52 INFO  : Context for processor 'microblaze_0' is selected.
+15:01:53 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+15:01:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+15:01:53 INFO  : Memory regions updated for context PA
+15:01:53 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+15:01:53 INFO  : Context for processor 'microblaze_0' is selected.
+15:01:54 INFO  : 'con' command is executed.
+15:01:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:01:54 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+16:06:16 INFO  : Disconnected from the channel tcfchan#7.
+16:06:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:06:16 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+16:06:16 INFO  : 'jtag frequency' command is executed.
+16:06:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+16:06:18 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+16:06:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:06:18 INFO  : Context for processor 'microblaze_0' is selected.
+16:06:18 INFO  : System reset is completed.
+16:06:21 INFO  : 'after 3000' command is executed.
+16:06:21 INFO  : Context for processor 'microblaze_0' is selected.
+16:06:22 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+16:06:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+16:06:22 INFO  : Memory regions updated for context PA
+16:06:22 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+16:06:22 INFO  : Context for processor 'microblaze_0' is selected.
+16:06:23 INFO  : 'con' command is executed.
+16:06:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:06:23 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+16:16:15 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+16:16:42 INFO  : Disconnected from the channel tcfchan#8.
+16:16:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:16:43 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+16:16:43 INFO  : 'jtag frequency' command is executed.
+16:16:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+16:16:45 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+16:16:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:16:45 INFO  : Context for processor 'microblaze_0' is selected.
+16:16:45 INFO  : System reset is completed.
+16:16:48 INFO  : 'after 3000' command is executed.
+16:16:48 INFO  : Context for processor 'microblaze_0' is selected.
+16:16:49 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+16:16:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+16:16:49 INFO  : Memory regions updated for context PA
+16:16:49 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+16:16:49 INFO  : Context for processor 'microblaze_0' is selected.
+16:16:50 INFO  : 'con' command is executed.
+16:16:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:16:50 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+21:54:35 INFO  : Disconnected from the channel tcfchan#9.
+10:21:31 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\temp_xsdb_launch_script.tcl
+10:21:34 INFO  : XSCT server has started successfully.
+10:21:34 INFO  : Successfully done setting XSCT server connection channel  
+10:21:34 INFO  : plnx-install-location is set to ''
+10:21:34 INFO  : Successfully done setting workspace for the tool. 
+10:21:36 INFO  : Registering command handlers for Vitis TCF services
+10:21:40 INFO  : Successfully done query RDI_DATADIR 
+13:34:11 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+13:34:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:35:00 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+13:35:00 INFO  : 'jtag frequency' command is executed.
+13:35:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+13:35:04 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+13:35:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:35:07 INFO  : Context for processor 'microblaze_0' is selected.
+13:35:07 INFO  : System reset is completed.
+13:35:10 INFO  : 'after 3000' command is executed.
+13:35:11 INFO  : Context for processor 'microblaze_0' is selected.
+13:35:12 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+13:35:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+13:35:12 INFO  : Memory regions updated for context PA
+13:35:12 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:35:12 INFO  : Context for processor 'microblaze_0' is selected.
+13:35:12 INFO  : 'con' command is executed.
+13:35:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:35:12 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+13:55:37 INFO  : Hardware specification for platform project 'sp701' is updated.
+13:55:59 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+13:56:02 INFO  : The hardware specfication used by project 'executable' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+13:56:02 INFO  : The file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+13:56:02 INFO  : The file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream\design_1_wrapper.mmi' stored in project is removed.
+13:56:02 INFO  : The updated bitstream files are copied from platform to folder 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream' in project 'executable'.
+13:56:24 INFO  : Disconnected from the channel tcfchan#1.
+13:56:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:56:25 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+13:56:25 INFO  : 'jtag frequency' command is executed.
+13:56:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+13:56:27 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+13:56:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:56:27 INFO  : Context for processor 'microblaze_0' is selected.
+13:56:27 INFO  : System reset is completed.
+13:56:30 INFO  : 'after 3000' command is executed.
+13:56:30 INFO  : Context for processor 'microblaze_0' is selected.
+13:56:31 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+13:56:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+13:56:31 INFO  : Memory regions updated for context PA
+13:56:31 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:56:31 INFO  : Context for processor 'microblaze_0' is selected.
+13:56:32 INFO  : 'con' command is executed.
+13:56:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:56:32 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+19:25:24 INFO  : Disconnected from the channel tcfchan#3.
+19:25:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:25:25 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+19:25:25 INFO  : 'jtag frequency' command is executed.
+19:25:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+19:25:27 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+19:25:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:25:27 INFO  : Context for processor 'microblaze_0' is selected.
+19:25:27 INFO  : System reset is completed.
+19:25:30 INFO  : 'after 3000' command is executed.
+19:25:30 INFO  : Context for processor 'microblaze_0' is selected.
+19:25:31 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+19:25:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+19:25:31 INFO  : Memory regions updated for context PA
+19:25:31 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+19:25:31 INFO  : Context for processor 'microblaze_0' is selected.
+19:25:31 INFO  : 'con' command is executed.
+19:25:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+19:25:31 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+22:08:17 INFO  : Hardware specification for platform project 'sp701' is updated.
+22:10:56 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+22:10:59 INFO  : The hardware specfication used by project 'executable' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+22:10:59 INFO  : The file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+22:10:59 INFO  : The file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream\design_1_wrapper.mmi' stored in project is removed.
+22:10:59 INFO  : The updated bitstream files are copied from platform to folder 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream' in project 'executable'.
+22:11:17 INFO  : Disconnected from the channel tcfchan#4.
+22:11:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:11:18 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+22:11:18 INFO  : 'jtag frequency' command is executed.
+22:11:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+22:11:20 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+22:11:20 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:11:20 INFO  : Context for processor 'microblaze_0' is selected.
+22:11:20 INFO  : System reset is completed.
+22:11:23 INFO  : 'after 3000' command is executed.
+22:11:23 INFO  : Context for processor 'microblaze_0' is selected.
+22:11:24 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+22:11:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+22:11:24 INFO  : Memory regions updated for context PA
+22:11:24 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+22:11:24 INFO  : Context for processor 'microblaze_0' is selected.
+22:11:24 INFO  : 'con' command is executed.
+22:11:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+22:11:24 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+23:02:24 INFO  : Disconnected from the channel tcfchan#6.
+12:06:24 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\temp_xsdb_launch_script.tcl
+12:06:27 INFO  : XSCT server has started successfully.
+12:06:27 INFO  : Successfully done setting XSCT server connection channel  
+12:06:27 INFO  : plnx-install-location is set to ''
+12:06:27 INFO  : Successfully done setting workspace for the tool. 
+12:06:28 INFO  : Registering command handlers for Vitis TCF services
+12:06:32 INFO  : Successfully done query RDI_DATADIR 
+12:32:55 INFO  : Hardware specification for platform project 'sp701' is updated.
+12:33:10 INFO  : Hardware specification for platform project 'sp701' is updated.
+12:34:05 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+12:34:05 ERROR : Failed to get platform details for the project 'executable'. Cannot sync application flags.
+12:34:07 ERROR : Failed to compute checksum of hardware specification file used by project 'executable'
+12:34:39 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\temp_xsdb_launch_script.tcl
+12:34:41 INFO  : XSCT server has started successfully.
+12:34:41 INFO  : Successfully done setting XSCT server connection channel  
+12:34:41 INFO  : plnx-install-location is set to ''
+12:34:41 INFO  : Successfully done setting workspace for the tool. 
+12:34:42 INFO  : Registering command handlers for Vitis TCF services
+12:34:43 INFO  : Successfully done query RDI_DATADIR 
+12:39:40 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+12:39:42 INFO  : Updating application flags with new BSP settings...
+12:39:43 INFO  : Successfully updated application flags for project executable.
+12:39:45 INFO  : The hardware specfication used by project 'executable' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+12:39:45 INFO  : The file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+12:39:45 INFO  : The file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream\design_1_wrapper.mmi' stored in project is removed.
+12:39:46 INFO  : The updated bitstream files are copied from platform to folder 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\executable\_ide\bitstream' in project 'executable'.
+12:39:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:40:01 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+12:40:01 INFO  : 'jtag frequency' command is executed.
+12:40:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+12:40:05 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+12:40:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:40:07 INFO  : Context for processor 'microblaze_0' is selected.
+12:40:07 INFO  : System reset is completed.
+12:40:10 INFO  : 'after 3000' command is executed.
+12:40:11 INFO  : Context for processor 'microblaze_0' is selected.
+12:40:12 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+12:40:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+12:40:12 INFO  : Memory regions updated for context PA
+12:40:12 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+12:40:12 INFO  : Context for processor 'microblaze_0' is selected.
+12:40:12 INFO  : 'con' command is executed.
+12:40:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:40:12 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+12:58:21 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+12:58:35 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+13:08:00 INFO  : Disconnected from the channel tcfchan#2.
+13:08:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:08:01 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+13:08:01 INFO  : 'jtag frequency' command is executed.
+13:08:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+13:08:03 ERROR : 'fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit' is cancelled.
+13:08:03 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: 'fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit' is cancelled.
+13:08:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:08:03 ERROR : 'fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit' is cancelled.
+13:08:09 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+13:08:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:08:15 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+13:08:15 INFO  : 'jtag frequency' command is executed.
+13:08:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+13:08:17 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+13:08:17 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:08:17 INFO  : Context for processor 'microblaze_0' is selected.
+13:08:17 INFO  : System reset is completed.
+13:08:20 INFO  : 'after 3000' command is executed.
+13:08:20 INFO  : Context for processor 'microblaze_0' is selected.
+13:08:21 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+13:08:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+13:08:21 INFO  : Memory regions updated for context PA
+13:08:21 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:08:21 INFO  : Context for processor 'microblaze_0' is selected.
+13:08:21 INFO  : 'con' command is executed.
+13:08:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:08:21 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+13:09:04 INFO  : Disconnected from the channel tcfchan#3.
+13:09:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:09:04 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+13:09:04 INFO  : 'jtag frequency' command is executed.
+13:09:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+13:09:06 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+13:09:06 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:09:06 INFO  : Context for processor 'microblaze_0' is selected.
+13:09:06 INFO  : System reset is completed.
+13:09:09 INFO  : 'after 3000' command is executed.
+13:09:09 INFO  : Context for processor 'microblaze_0' is selected.
+13:09:10 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+13:09:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+13:09:10 INFO  : Memory regions updated for context PA
+13:09:10 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:09:10 INFO  : Context for processor 'microblaze_0' is selected.
+13:09:11 INFO  : 'con' command is executed.
+13:09:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:09:11 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+13:11:02 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+13:14:33 INFO  : Disconnected from the channel tcfchan#4.
+13:14:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:14:34 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+13:14:34 INFO  : 'jtag frequency' command is executed.
+13:14:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+13:14:36 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+13:14:36 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:14:36 INFO  : Context for processor 'microblaze_0' is selected.
+13:14:36 INFO  : System reset is completed.
+13:14:39 INFO  : 'after 3000' command is executed.
+13:14:39 INFO  : Context for processor 'microblaze_0' is selected.
+13:14:39 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+13:14:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+13:14:39 INFO  : Memory regions updated for context PA
+13:14:39 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:14:39 INFO  : Context for processor 'microblaze_0' is selected.
+13:14:40 INFO  : 'con' command is executed.
+13:14:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:14:40 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+13:17:29 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+13:17:33 INFO  : Disconnected from the channel tcfchan#5.
+13:17:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:17:33 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+13:17:33 INFO  : 'jtag frequency' command is executed.
+13:17:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+13:17:36 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+13:17:36 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:17:36 INFO  : Context for processor 'microblaze_0' is selected.
+13:17:36 INFO  : System reset is completed.
+13:17:39 INFO  : 'after 3000' command is executed.
+13:17:39 INFO  : Context for processor 'microblaze_0' is selected.
+13:17:39 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+13:17:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+13:17:39 INFO  : Memory regions updated for context PA
+13:17:39 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:17:39 INFO  : Context for processor 'microblaze_0' is selected.
+13:17:40 INFO  : 'con' command is executed.
+13:17:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:17:40 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+13:20:45 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+13:21:23 INFO  : Disconnected from the channel tcfchan#6.
+13:21:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:21:24 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+13:21:24 INFO  : 'jtag frequency' command is executed.
+13:21:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+13:21:26 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+13:21:26 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:21:26 INFO  : Context for processor 'microblaze_0' is selected.
+13:21:26 INFO  : System reset is completed.
+13:21:29 INFO  : 'after 3000' command is executed.
+13:21:29 INFO  : Context for processor 'microblaze_0' is selected.
+13:21:30 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+13:21:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+13:21:30 INFO  : Memory regions updated for context PA
+13:21:30 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:21:30 INFO  : Context for processor 'microblaze_0' is selected.
+13:21:30 INFO  : 'con' command is executed.
+13:21:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:21:30 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+13:22:03 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+13:22:08 INFO  : Disconnected from the channel tcfchan#7.
+13:22:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:22:09 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+13:22:09 INFO  : 'jtag frequency' command is executed.
+13:22:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+13:22:11 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+13:22:11 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:22:11 INFO  : Context for processor 'microblaze_0' is selected.
+13:22:11 INFO  : System reset is completed.
+13:22:14 INFO  : 'after 3000' command is executed.
+13:22:14 INFO  : Context for processor 'microblaze_0' is selected.
+13:22:15 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+13:22:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+13:22:15 INFO  : Memory regions updated for context PA
+13:22:15 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:22:15 INFO  : Context for processor 'microblaze_0' is selected.
+13:22:15 INFO  : 'con' command is executed.
+13:22:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:22:15 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+13:29:01 INFO  : Checking for BSP changes to sync application flags for project 'executable'...
+13:29:04 INFO  : Disconnected from the channel tcfchan#8.
+13:29:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:29:05 INFO  : Jtag cable 'Xilinx HW-S7-SP701 FT4232H 41938109810A' is selected.
+13:29:05 INFO  : 'jtag frequency' command is executed.
+13:29:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0' command is executed.
+13:29:07 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit"
+13:29:07 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:29:07 INFO  : Context for processor 'microblaze_0' is selected.
+13:29:07 INFO  : System reset is completed.
+13:29:10 INFO  : 'after 3000' command is executed.
+13:29:10 INFO  : Context for processor 'microblaze_0' is selected.
+13:29:10 INFO  : The application 'C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf' is downloaded to processor 'microblaze_0'.
+13:29:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-S7-SP701 FT4232H 41938109810A" && level==0} -index 0
+fpga -file C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/_ide/bitstream/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/executable/Debug/executable.elf
+----------------End of Script----------------
+
+13:29:10 INFO  : Memory regions updated for context PA
+13:29:10 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:29:11 INFO  : Context for processor 'microblaze_0' is selected.
+13:29:11 INFO  : 'con' command is executed.
+13:29:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:29:11 INFO  : Launch script is exported to file 'C:\hdl_projects\mipi_csi2_rx_subsystem_0_ex\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_executable_system_standalone.tcl'
+21:46:42 INFO  : Disconnected from the channel tcfchan#9.

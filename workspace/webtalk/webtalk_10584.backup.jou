@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# 
+# Start of session at: Tue Mar 31 23:02:25 2020
+# Process ID: 10584
+# Current directory: C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/webtalk
+# Command line: wbtcv.exe -mode batch -source vitis_webtalk.tcl
+# Log file: C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/webtalk/webtalk.log
+# Journal file: C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source vitis_webtalk.tcl

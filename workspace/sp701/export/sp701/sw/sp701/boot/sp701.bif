@@ -1,0 +1,6 @@
+/*sp701*/
+the_ROM_image:
+{
+   <bitstream> 
+   <elf> 
+}

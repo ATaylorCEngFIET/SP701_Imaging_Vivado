@@ -1,0 +1,122 @@
+2020-04-01T13:29:01.26058300255-13:29:01 **** Incremental Build of configuration Debug for project executable ****
+000-make all 
+000-'Building file: ../src/mipi_imx274.c'
+000-'Invoking: MicroBlaze gcc compiler'
+000-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mipi_imx274.o" -IC:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mipi_imx274.d" -MT"src/mipi_imx274.o" -o "src/mipi_imx274.o" "../src/mipi_imx274.c"
+000-In file included from ../src/mipi_imx274.c:43:
+000/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h1068-1-1"XPAR_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_MASK" redefined1-C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h:1068: warning: "XPAR_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_MASK" redefined
+000- #define XPAR_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_MASK 0X000004U
+000- 
+000/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h1066-1-1this is the location of the previous definition0-C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h:1066: note: this is the location of the previous definition
+000- #define XPAR_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_MASK 0X000002U
+000- 
+000/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h1069-1-1"XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_INTR" redefined1-C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h:1069: warning: "XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_INTR" redefined
+000- #define XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_INTR 2U
+000- 
+000/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h1067-1-1this is the location of the previous definition0-C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h:1067: note: this is the location of the previous definition
+000- #define XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_INTR 1U
+000- 
+000/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h1070-1-1"XPAR_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_MASK" redefined1-C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h:1070: warning: "XPAR_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_MASK" redefined
+000- #define XPAR_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_MASK 0X000008U
+000- 
+000/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h1068-1-1this is the location of the previous definition0-C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h:1068: note: this is the location of the previous definition
+000- #define XPAR_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_MASK 0X000004U
+000- 
+000/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h1071-1-1"XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_INTR" redefined1-C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h:1071: warning: "XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_INTR" redefined
+000- #define XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_INTR 3U
+000- 
+000/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h1069-1-1this is the location of the previous definition0-C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h:1069: note: this is the location of the previous definition
+000- #define XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_INTR 2U
+000- 
+000/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h1072-1-1"XPAR_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_MASK" redefined1-C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h:1072: warning: "XPAR_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_MASK" redefined
+000- #define XPAR_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_MASK 0X000010U
+000- 
+000/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h1070-1-1this is the location of the previous definition0-C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h:1070: note: this is the location of the previous definition
+000- #define XPAR_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_MASK 0X000008U
+000- 
+000/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h1073-1-1"XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_INTR" redefined1-C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h:1073: warning: "XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_INTR" redefined
+000- #define XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_INTR 4U
+000- 
+000/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h1071-1-1this is the location of the previous definition0-C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h:1071: note: this is the location of the previous definition
+000- #define XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_INTR 3U
+000- 
+000/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h1074-1-1"XPAR_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_MASK" redefined1-C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h:1074: warning: "XPAR_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_MASK" redefined
+000- #define XPAR_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_MASK 0X000020U
+000- 
+000/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h1072-1-1this is the location of the previous definition0-C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h:1072: note: this is the location of the previous definition
+000- #define XPAR_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_MASK 0X000010U
+000- 
+000/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h1075-1-1"XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_INTR" redefined1-C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h:1075: warning: "XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_INTR" redefined
+000- #define XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_INTR 5U
+000- 
+000/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h1073-1-1this is the location of the previous definition0-C:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/sp701/export/sp701/sw/sp701/standalone_domain/bspinclude/include/xparameters.h:1073: note: this is the location of the previous definition
+000- #define XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_LOW_PRIORITY_INTR 4U
+000- 
+000-In file included from ../src/mipi_imx274.c:46:
+000/executable/src/function_prototype.h132-1-1parameter names (without types) in function declaration1-../src/function_prototype.h:132:1: warning: parameter names (without types) in function declaration
+000- extern int SensorPreConfig(pcam5c_mode);
+000- ^~~~~~
+000/executable/src/function_prototype.h140-1-1type defaults to 'int' in declaration of 'getchar' [-Wimplicit-int]1-../src/function_prototype.h:140:9: warning: type defaults to 'int' in declaration of 'getchar' [-Wimplicit-int]
+000-  extern getchar();
+000-         ^~~~~~~
+000-In file included from ../src/mipi_imx274.c:47:
+000/executable/src/imx274_cfgs.h45-1-1useless storage class specifier in empty declaration1-../src/imx274_cfgs.h:45:1: warning: useless storage class specifier in empty declaration
+000- };
+000- ^
+000/executable/src/mipi_imx274.c68-1-1"/*" within comment [-Wcomment]1-../src/mipi_imx274.c:68:1: warning: "/*" within comment [-Wcomment]
+000- /* Uncomment or comment the following depending on the board used*/
+000-  
+000-../src/mipi_imx274.c: In function 'IicLowLevelDynEeprom':
+000/executable/src/mipi_imx274.c318-1-1this 'for' clause does not guard... [-Wmisleading-indentation]1-../src/mipi_imx274.c:318:7: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+000-       for(i=0;i<1000;i++); // IIC delay
+000-       ^~~
+000/executable/src/mipi_imx274.c319-1-1...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'0-../src/mipi_imx274.c:319:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+000-    if (BytesRead != 1) {
+000-    ^~
+000-../src/mipi_imx274.c: In function 'main':
+000/executable/src/mipi_imx274.c504-1-1implicit declaration of function 'Xil_ICacheDisable'; did you mean 'XIntc_Disable'? [-Wimplicit-function-declaration]1-../src/mipi_imx274.c:504:2: warning: implicit declaration of function 'Xil_ICacheDisable'; did you mean 'XIntc_Disable'? [-Wimplicit-function-declaration]
+000-  Xil_ICacheDisable();
+000-  ^~~~~~~~~~~~~~~~~
+000-  XIntc_Disable
+000/executable/src/mipi_imx274.c505-1-1implicit declaration of function 'Xil_DCacheDisable'; did you mean 'XIntc_Disable'? [-Wimplicit-function-declaration]1-../src/mipi_imx274.c:505:2: warning: implicit declaration of function 'Xil_DCacheDisable'; did you mean 'XIntc_Disable'? [-Wimplicit-function-declaration]
+000-  Xil_DCacheDisable();
+000-  ^~~~~~~~~~~~~~~~~
+000-  XIntc_Disable
+000/executable/src/mipi_imx274.c635-1-1implicit declaration of function 'demosaic' [-Wimplicit-function-declaration]1-../src/mipi_imx274.c:635:20: warning: implicit declaration of function 'demosaic' [-Wimplicit-function-declaration]
+000-           Status = demosaic();
+000-                    ^~~~~~~~
+000/executable/src/mipi_imx274.c637-1-1unknown escape sequence: '\040'1-../src/mipi_imx274.c:637:16: warning: unknown escape sequence: '\040'
+000-     xil_printf("\n\ demosaic failed \n\r");
+000-                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+000/executable/src/mipi_imx274.c642-1-1implicit declaration of function 'CamReset'; did you mean 'memset'? [-Wimplicit-function-declaration]1-../src/mipi_imx274.c:642:11: warning: implicit declaration of function 'CamReset'; did you mean 'memset'? [-Wimplicit-function-declaration]
+000-           CamReset();
+000-           ^~~~~~~~
+000-           memset
+000/executable/src/mipi_imx274.c673-1-1implicit declaration of function 'WritetoReg' [-Wimplicit-function-declaration]1-../src/mipi_imx274.c:673:4: warning: implicit declaration of function 'WritetoReg' [-Wimplicit-function-declaration]
+000-    WritetoReg(0x30, 0x08, 0x02);
+000-    ^~~~~~~~~~
+000/executable/src/mipi_imx274.c461-1-1variable 'hum_perrh' set but not used [-Wunused-but-set-variable]1-../src/mipi_imx274.c:461:19: warning: variable 'hum_perrh' set but not used [-Wunused-but-set-variable]
+000-  float temp_degc, hum_perrh;
+000-                   ^~~~~~~~~
+000/executable/src/mipi_imx274.c451-1-1unused variable 'prev_sel' [-Wunused-variable]1-../src/mipi_imx274.c:451:17: warning: unused variable 'prev_sel' [-Wunused-variable]
+000-  int usr_entry ,prev_sel;
+000-                 ^~~~~~~~
+000/executable/src/mipi_imx274.c451-1-1unused variable 'usr_entry' [-Wunused-variable]1-../src/mipi_imx274.c:451:6: warning: unused variable 'usr_entry' [-Wunused-variable]
+000-  int usr_entry ,prev_sel;
+000-      ^~~~~~~~~
+000-'Finished building: ../src/mipi_imx274.c'
+000-' '
+000-'Building target: executable.elf'
+000-'Invoking: MicroBlaze gcc linker'
+000-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/hdl_projects/mipi_csi2_rx_subsystem_0_ex/workspace/sp701/export/sp701/sw/sp701/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "executable.elf"  ./src/function_prototype.o ./src/imx274_cfgs.o ./src/mipi_imx274.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: executable.elf'
+000-' '
+000-'Invoking: MicroBlaze Print Size'
+000-mb-size executable.elf  |tee "executable.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  71316	   1836	   8044	  81196	  13d2c	executable.elf
+000-'Finished building: executable.elf.size'
+000-' '
+00255-
+13:29:02 Build Finished (took 775ms)
+

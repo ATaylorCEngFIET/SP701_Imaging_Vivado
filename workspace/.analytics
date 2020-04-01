@@ -1,0 +1,32 @@
+timestamp=[2020-03-29 12:18:29], mode=WORKBENCH_START, duration=0:00:05.715, duration_ms=5715, data={}
+timestamp=[2020-03-29 12:18:30], mode=WORKBENCH_UI_INIT, duration=0:00:01.150, duration_ms=1150, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2020-03-29 12:20:47], mode=PLATFORM_CREATION, duration=0:00:12.937, duration_ms=12937, data={platform_source=dsa, os=standalone, processor=microblaze, platform=null}
+timestamp=[2020-03-29 12:21:40], mode=PLATFORM_GENERATION, duration=0:00:27.108, duration_ms=27108, data={name=sp701}
+timestamp=[2020-03-29 19:01:39], mode=WORKBENCH_START, duration=0:00:10.782, duration_ms=10782, data={}
+timestamp=[2020-03-29 19:01:40], mode=WORKBENCH_UI_INIT, duration=0:00:01.242, duration_ms=1242, data={editors_count=3, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,executable,executable_system,sp701}
+timestamp=[2020-03-29 19:04:44], mode=PLATFORM_GENERATION, duration=0:00:05.041, duration_ms=5041, data={name=sp701}
+timestamp=[2020-03-29 19:19:57], mode=PLATFORM_GENERATION, duration=0:00:04.913, duration_ms=4913, data={name=sp701}
+timestamp=[2020-03-29 19:20:18], mode=PLATFORM_GENERATION, duration=0:00:03.333, duration_ms=3333, data={name=sp701}
+timestamp=[2020-03-29 19:20:48], mode=PLATFORM_GENERATION, duration=0:00:01.319, duration_ms=1319, data={name=sp701}
+timestamp=[2020-03-29 19:20:50], mode=PLATFORM_GENERATION, duration=0:00:01.293, duration_ms=1293, data={name=sp701}
+timestamp=[2020-03-29 19:20:56], mode=PLATFORM_GENERATION, duration=0:00:01.301, duration_ms=1301, data={name=sp701}
+timestamp=[2020-03-29 19:21:27], mode=PLATFORM_GENERATION, duration=0:00:03.615, duration_ms=3615, data={name=sp701}
+timestamp=[2020-03-29 19:22:56], mode=WORKBENCH_START, duration=0:00:07.810, duration_ms=7810, data={}
+timestamp=[2020-03-29 19:22:57], mode=WORKBENCH_UI_INIT, duration=0:00:00.820, duration_ms=820, data={editors_count=3, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,executable,executable_system,sp701}
+timestamp=[2020-03-29 19:23:36], mode=PLATFORM_GENERATION, duration=0:00:34.169, duration_ms=34169, data={name=sp701}
+timestamp=[2020-03-29 21:07:29], mode=PLATFORM_GENERATION, duration=0:00:01.764, duration_ms=1764, data={name=sp701}
+timestamp=[2020-03-30 12:49:10], mode=WORKBENCH_START, duration=0:00:11.648, duration_ms=11648, data={}
+timestamp=[2020-03-30 12:49:11], mode=WORKBENCH_UI_INIT, duration=0:00:00.719, duration_ms=719, data={editors_count=4, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,executable,executable_system,sp701}
+timestamp=[2020-03-30 12:53:26], mode=PLATFORM_GENERATION, duration=0:00:02.496, duration_ms=2496, data={name=sp701}
+timestamp=[2020-03-30 15:01:29], mode=PLATFORM_GENERATION, duration=0:00:02.431, duration_ms=2431, data={name=sp701}
+timestamp=[2020-03-31 10:21:34], mode=WORKBENCH_START, duration=0:00:12.546, duration_ms=12546, data={}
+timestamp=[2020-03-31 10:21:35], mode=WORKBENCH_UI_INIT, duration=0:00:01.245, duration_ms=1245, data={editors_count=5, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,executable,executable_system,sp701}
+timestamp=[2020-03-31 13:55:56], mode=PLATFORM_GENERATION, duration=0:00:02.904, duration_ms=2904, data={name=sp701}
+timestamp=[2020-03-31 22:10:49], mode=PLATFORM_GENERATION, duration=0:00:02.585, duration_ms=2585, data={name=sp701}
+timestamp=[2020-04-01 12:06:27], mode=WORKBENCH_START, duration=0:00:12.318, duration_ms=12318, data={}
+timestamp=[2020-04-01 12:06:28], mode=WORKBENCH_UI_INIT, duration=0:00:00.970, duration_ms=970, data={editors_count=5, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,executable,executable_system,sp701}
+timestamp=[2020-04-01 12:33:39], mode=PLATFORM_GENERATION, duration=0:00:06.510, duration_ms=6510, data={name=sp701}
+timestamp=[2020-04-01 12:34:05], mode=PLATFORM_GENERATION, duration=0:00:03.543, duration_ms=3543, data={name=sp701}
+timestamp=[2020-04-01 12:34:41], mode=WORKBENCH_START, duration=0:00:08.579, duration_ms=8579, data={}
+timestamp=[2020-04-01 12:34:42], mode=WORKBENCH_UI_INIT, duration=0:00:00.930, duration_ms=930, data={editors_count=5, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,executable,executable_system,sp701}
+timestamp=[2020-04-01 12:35:35], mode=PLATFORM_GENERATION, duration=0:00:39.463, duration_ms=39463, data={name=sp701}
